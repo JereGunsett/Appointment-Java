@@ -18,9 +18,9 @@ public class UiMenu {
 
         int response = 0;
         do {
-            System.out.println("1. model.Doctor");
-            System.out.println("2. model.Patient");
-            System.out.println("0. Salir");
+            System.out.println("1. Doctor");
+            System.out.println("2. Patient");
+            System.out.println("0. Exit");
 
             Scanner sc = new Scanner(System.in);
             response = Integer.valueOf(sc.nextLine());
@@ -67,6 +67,7 @@ public class UiMenu {
                         //Obtener el usuario logeado
                         doctorLogged = d;
                         //Mostrar el menu del doctor con showDoctorMenu
+                        UIDoctorMenu.showDoctorMenu();
                     }
                 }
             }
